@@ -7,6 +7,13 @@ html {
   box-sizing: inherit;
 }
 
+.banner {
+  position: relative;
+}
+
+.text-wrapper {
+  position: absolute;
+}
 
 /*
 ## Details
