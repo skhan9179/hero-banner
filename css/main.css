@@ -1,27 +1,54 @@
 html {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 .banner {
   position: relative;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.img-flex {
+  display: block;
+  width: 100%;
 }
 
 .text-wrapper {
   position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 50em;
+
+  padding: 0 25px;
 }
 
-/*
-## Details
+h2 {
+  line-height: 1.4;
 
-- *Typefaces:* `Open Sans` (regular, italic, bold)
-- *Text sizes:* `4rem`, `2rem`
-- *Colours:* `rgba(0, 0, 0, .5)`
-- *Expected class names:* `.img-flex`, `.banner`
-- *Banner maximum height:* `500px`
-- *Content maximum width:* `50em`
-*/
+  display: inline;
+  background-color: rgba(0, 0, 0, .5);
+
+  font-weight: bold;
+  font-size: 4rem;
+  color: white;
+}
+
+p {
+  margin: 0;
+  padding: 20px 0;
+  font-style: italic;
+  font-size: 2rem;
+}
